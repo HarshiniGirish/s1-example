@@ -1,5 +1,5 @@
 algorithm_description: Test alg for S1 access at ASF
-algorithm_name: AFSDAACS3-s1
+algorithm_name: OPERA_DISP
 algorithm_version: 0.1.1
 build_command: s1-example/build.sh
 disk_space: 10GB
