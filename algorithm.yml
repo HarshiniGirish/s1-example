@@ -9,5 +9,5 @@ inputs:
   file: []
   positional: []
 queue: maap-dps-sandbox
-repository_url: https://github.com/MAAP-Project/s1-example.git
+repository_url: https://github.com/HarshiniGirish/s1-example.git
 run_command: s1-example/run.sh
