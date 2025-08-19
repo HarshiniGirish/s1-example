@@ -28,7 +28,7 @@ def download_s3_file(s3, bucket:str, file_name:str, dest:str) -> str:
 
 def download_test(output:str):
     results = maap.searchGranule(cmr_host="cmr.earthdata.nasa.gov",
-        short_name='SENTINEL-1A_SLC',
++        short_name='OPERA_L3_DISP-S1_V1',
         bounding_box='-124.8136026553671,32.445063449213436,-113.75989347462286,42.24498423828791',
         limit=20,
         temporal='2023-06-01T00:00:00Z,2030-06-12T23:59:59Z'
@@ -44,7 +44,7 @@ def download_test(output:str):
     prefix = '/'.join(split_path[1:])
     
     # Get temporary S3 credentials
-    asf_s3 = "https://sentinel1.asf.alaska.edu/s3credentials"
+    asf_s3 = "https://cumulus.asf.alaska.edu/s3credentials"
     #s3 = get_s3_creds(asf_s3)
     s3 = get_s3_client(asf_s3)
     
